@@ -98,7 +98,12 @@ document.querySelector('.b-6').addEventListener('click', (): void => {
 // Task 07
 // Создайте enum с названием TsTypes, где перечисляются типы данных: number, string, boolean и им соответствуют сокращения num, str, bool. Выведите в консоль.
 
-
+enum TsTypes {
+    number = 'num',
+    string = 'str',
+    boolean = 'bool',
+}
+console.log(TsTypes);
 
 // Task 08
 // Создайте enum Time которая содержит перечисление hr, min, sec, AM, PM и соответствующее им значения hour, minute, second, Ante Meridiem, Post Meridiem. Выведите в консоль.
