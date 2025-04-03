@@ -2,10 +2,10 @@
 // Создайте enum с именем WebExt содержащий расширения файлов для изображений в веб - PNG, JPEG, GIF, WEBP. Расширения писать в верхнем регистре. Числовые значения для расширений не вводить. Выведите в консоль для проверки.
 
 enum WebExt {
-    PNG,
-    JPEG,
-    GIF,
-    WEBP
+    PNG = 'PNG',
+    JPEG = 'JPEG',
+    GIF = 'GIF',
+    WEBP = 'WEBP'
 
 }
 console.log(WebExt);

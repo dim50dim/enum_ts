@@ -3,10 +3,10 @@
 // Создайте enum с именем WebExt содержащий расширения файлов для изображений в веб - PNG, JPEG, GIF, WEBP. Расширения писать в верхнем регистре. Числовые значения для расширений не вводить. Выведите в консоль для проверки.
 var WebExt;
 (function (WebExt) {
-    WebExt[WebExt["PNG"] = 0] = "PNG";
-    WebExt[WebExt["JPEG"] = 1] = "JPEG";
-    WebExt[WebExt["GIF"] = 2] = "GIF";
-    WebExt[WebExt["WEBP"] = 3] = "WEBP";
+    WebExt["PNG"] = "PNG";
+    WebExt["JPEG"] = "JPEG";
+    WebExt["GIF"] = "GIF";
+    WebExt["WEBP"] = "WEBP";
 })(WebExt || (WebExt = {}));
 console.log(WebExt);
 // Task 02
