@@ -65,7 +65,9 @@ enum Wolves {
 }
 
 const f05 = () => {
-    return;
+   const spec : string[] = Object.keys(Wolves).filter(item => isNaN(Number(item)))
+
+    return spec;
 }
 
 document.querySelector('.b-5').addEventListener('click', (): void => {

@@ -56,7 +56,8 @@ var Wolves;
     Wolves[Wolves["Bite"] = 10] = "Bite";
 })(Wolves || (Wolves = {}));
 const f05 = () => {
-    return;
+    const spec = Object.keys(Wolves).filter(item => isNaN(Number(item)));
+    return spec;
 };
 document.querySelector('.b-5').addEventListener('click', () => {
     console.log(f05());
