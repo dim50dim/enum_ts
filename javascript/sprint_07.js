@@ -71,7 +71,8 @@ var TrafficLight;
     TrafficLight["Red"] = "R";
 })(TrafficLight || (TrafficLight = {}));
 const f06 = () => {
-    return;
+    const vals = Object.values(TrafficLight);
+    return vals;
 };
 document.querySelector('.b-6').addEventListener('click', () => {
     console.log(f06());

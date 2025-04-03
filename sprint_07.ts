@@ -85,8 +85,10 @@ enum TrafficLight {
 }
 
 const f06 = (): string[] => {
+   const vals : string[] = Object.values(TrafficLight);
 
-    return;
+   
+    return vals;
 }
 
 document.querySelector('.b-6').addEventListener('click', (): void => {
