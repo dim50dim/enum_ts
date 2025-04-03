@@ -2,10 +2,10 @@
 // Создайте enum с именем WebExt содержащий расширения файлов для изображений в веб - PNG, JPEG, GIF, WEBP. Расширения писать в верхнем регистре. Числовые значения для расширений не вводить. Выведите в консоль для проверки.
 
 enum WebExt {
-    PNG = 'PNG',
-    JPEG = 'JPEG',
-    GIF = 'GIF',
-    WEBP = 'WEBP'
+    PNG ,
+    JPEG,
+    GIF,
+    WEBP,
 
 }
 console.log(WebExt);
@@ -13,7 +13,16 @@ console.log(WebExt);
 
 // Task 02
 // Создайте enum с именем Days, содержащий названия дней недели: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday. При этом Monday соответствует число 1, Tuesday число 2 и т.д. Выведите в консоль.
-
+enum Days {
+    Monday = 1,
+    Tuesday = 2,
+    Wednesday = 3,
+    Thursday = 4,
+    Friday = 5,
+    Saturday = 6,
+    Sunday = 7,
+}
+console.log(Days);
 
 
 // Task 03
