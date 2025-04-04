@@ -133,10 +133,16 @@ const f09 = () => {
 // Task 10
 // Создайте enum Roles, содержащий ключи admin со значением 1, writer со значением 5, и user со значением 10. Напишите функцию f10, которая может принимать аргумент - тип Roles и если переданная роль admin или writer то возвращает true, в противном случае - false.
 
-// enum Roles
+enum Roles {
+    admin = 1,
+    writer = 5,
+    user = 10,
+}
 
-// const f10 =
+const f10 = (role: Roles) :boolean => {
+      return role === Roles.admin || role === Roles.writer;
+} 
 
-// document.querySelector('.b-10').addEventListener('click', ():void=> {
-//    console.log(f10(Roles.writer));
-// });
+document.querySelector('.b-10').addEventListener('click', ():void=> {
+   console.log(f10(Roles.writer));
+});

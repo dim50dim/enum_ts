@@ -88,6 +88,15 @@ var TsTypes;
 console.log(TsTypes);
 // Task 08
 // Создайте enum Time которая содержит перечисление hr, min, sec, AM, PM и соответствующее им значения hour, minute, second, Ante Meridiem, Post Meridiem. Выведите в консоль.
+var Time;
+(function (Time) {
+    Time["hr"] = "hour";
+    Time["min"] = "minute";
+    Time["sec"] = "second";
+    Time["AM"] = "Ante Meridiem";
+    Time["PM"] = "Post Meridiem";
+})(Time || (Time = {}));
+console.log(Time);
 // Task 09
 // Создайте функцию, которая принимает аргумент типа TsTypes, и возвращает, если number - число 1, если string то строку '1', если boolean то true. Тип данных функции укажите самостоятельно.
 // enum TsTypes
@@ -98,9 +107,16 @@ const f09 = () => {
 // });
 // Task 10
 // Создайте enum Roles, содержащий ключи admin со значением 1, writer со значением 5, и user со значением 10. Напишите функцию f10, которая может принимать аргумент - тип Roles и если переданная роль admin или writer то возвращает true, в противном случае - false.
-// enum Roles
-// const f10 =
-// document.querySelector('.b-10').addEventListener('click', ():void=> {
-//    console.log(f10(Roles.writer));
-// });
+var Roles;
+(function (Roles) {
+    Roles[Roles["admin"] = 1] = "admin";
+    Roles[Roles["writer"] = 5] = "writer";
+    Roles[Roles["user"] = 10] = "user";
+})(Roles || (Roles = {}));
+const f10 = (role) => {
+    return role === Roles.admin || role === Roles.writer;
+};
+document.querySelector('.b-10').addEventListener('click', () => {
+    console.log(f10(Roles.writer));
+});
 //# sourceMappingURL=sprint_07.js.map
