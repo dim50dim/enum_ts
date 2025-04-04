@@ -120,7 +120,9 @@ console.log(Time);
 // Task 09
 // Создайте функцию, которая принимает аргумент типа TsTypes, и возвращает, если number - число 1, если string то строку '1', если boolean то true. Тип данных функции укажите самостоятельно.
 
-// enum TsTypes
+enum TsTypes {
+    
+}
 
 const f09 = () => {
 
