@@ -139,8 +139,8 @@ enum Roles {
     user = 10,
 }
 
-const f10 = (role: Roles) :boolean => {
-      return role === Roles.admin || role === Roles.writer;
+const f10 = (role: Roles) : boolean => { 
+    return (role === Roles.admin || role === Roles.writer);
 } 
 
 document.querySelector('.b-10').addEventListener('click', ():void=> {

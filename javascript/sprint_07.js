@@ -114,7 +114,7 @@ var Roles;
     Roles[Roles["user"] = 10] = "user";
 })(Roles || (Roles = {}));
 const f10 = (role) => {
-    return role === Roles.admin || role === Roles.writer;
+    return (role === Roles.admin || role === Roles.writer);
 };
 document.querySelector('.b-10').addEventListener('click', () => {
     console.log(f10(Roles.writer));
